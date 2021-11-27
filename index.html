@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leslie Gaming Corp Ltd.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-----Fő oldal----->
+    <section class="header" id="home">
+        <nav>
+            <a href="index.html"><img class="logoimg" src="images/logo_round1.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#games">GAMES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="bar">
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
+        </nav>
+
+    <div class="text-box">
+        <h1>Play, relax and have fun</h1>
+        <p>Have nothing to do, you are bored, take your phone out of your pocket and start playing some games and 
+        the time will fly away faster than you have thought. 
+        <p>Whenever your business arises and you have to go, just exit the game, it will wait.<p>
+        <a href="#about" class="learn">Learn more</a>
+    </div>
+    </section>
+
+
+    <!----- Rólunk oldal----->
+
+    <section class="about" id="about">
+        <h1>About Us</h1>
+        <br><br>
+        <p>Our mission is to achieve an unstressful gaming experience.</p>
+        <p>In the current running world it is really something to not having to hurry. 
+        This is why we design our games the way that it needs the least amount of attention, 
+        You do not need to open them, You will not lose anything but when You feel like this is the time
+        for playing something You will have a wonderful and relaxing experience</p>
+
+    </section>
+
+
+    <!-----Játékok oldal----->
+
+    <section class="games" id="games">
+        <h1>Games</h1>
+        <div class="row1">
+            <div class="games-col" onclick="openRest()">
+                <h3>Restaurant and coffee tycoon</h3>
+                <p>Start Your new coffee shop. Build, upgrade, manage. Become the biggest 
+                restaurant franchise. Share Your result and amaze everyone. Create the most modern
+                eatery with the best atmosphere. Spread everywhere around the Earth</p>
+                <br><br><br><br>
+                <img src="images/restaurant.jpeg" alt="restaurant" class="game-img">
+            </div>
+            <div class="games-col" onclick="openHot()">
+                <h3>Hotel tycoon</h3>
+                <p>Build your own hotel empire and become a tourism tycoon! Enlarge your hotel rooms, 
+                add luxury furniture and striking decoration, enhance all the amenities and comforts and 
+                make your guests happy offering the best leisure activities. 
+                Be the perfect host to your clients and upgrade your facilities, offer delicious meals and drinks, 
+                expand the swimming pool, keep the rooms clean and build competitive suites. 
+                Take advantage of your idle activity and reinvest your earnings with a business vision.</p>
+                <img src="images/hotel.jpg" alt="hotel" class="game-img">
+            </div>
+            <div class="games-col" onclick="openPol()">
+                <h3>Police tycoon</h3>
+                <p>Take control of numerous police precincts and become rich preserving the security of your district.
+                Start running a small police department and work hard to make your reputation grow. 
+                Improve every detail in your facilities and turn your small office into a renowned police station.
+                Take numerous cases and draw up different investigation plans to solve them. 
+                Catch the most wanted criminals in the neighborhood. Unlock well-known characters during the game and 
+                put them behind bars.</p>
+                <img src="images/police.jpg" alt="police" class="game-img">
+            </div>
+        </div>
+
+    </section>
+
+    <!----- Kapcsolat----->
+
+    <section class="contact" id="contact">
+        <h1>Contacts and social</h1>
+        <p><span class="email-text">Support email address: </span><span class="email">lesliegamingcorpltd.help@gmail.com</span></p>
+        <div class="icos">
+            <div><i class="fa fa-instagram" onclick="openInsta()"></i></div>
+            <div><i class="fa fa-facebook-official" onclick="openFace()"></i></div>
+        </div>
+
+
+
+    </section>
+    
+    <!-----JavaScript for mobile menu----->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+        function openRest(){
+            window.open("https://www.youtube.com/watch?v=cRG83d3iffI");
+        }
+
+        function openHot(){
+            window.open("https://www.youtube.com/watch?v=UefeH0qIcuw");
+        }
+
+        function openPol(){
+            window.open("https://www.youtube.com/watch?v=ebVewBrgK3Y");
+        }
+
+        function openInsta(){
+            window.open("http://instagram.com/_u/leslie_gamingcorp/");
+        }
+
+        function openFace(){
+            window.open("https://www.facebook.com/laszlo.marko.0310");
+        }
+
+        function scrollHome(){
+            document.getElementsById("home").scrollIntoView();
+        }
+
+        function scrollAbout(){
+            document.getElementsById("about").scrollIntoView();
+        }
+
+        function scrollGames(){
+            document.getElementsById("games").scrollIntoView();
+        }
+
+        function scrollContact(){
+            document.getElementsById("contact").scrollIntoView();
+        }
+
+    </script>
+
+
+</body>
+</html>
