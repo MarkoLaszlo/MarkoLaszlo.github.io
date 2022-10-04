@@ -212,7 +212,7 @@ html {
     margin-bottom: 20px;
 }
 
-@media (max-width: 750px, orientation: portrait) {
+@media (max-width: 750px) {
     .szolgflex {
         display: flex;
         justify-content: center;
@@ -229,7 +229,7 @@ html {
     }
 }
 
-@media (max-width: 850px, orientation: portrait) {
+@media (max-width: 850px) {
     .navmain {
         display: none;
     }
