@@ -1,147 +1,306 @@
-*{
-    box-sizing: border-box;
-}
-
-html, body{
+* {
     margin: 0;
     padding: 0;
 }
 
-/*header*/
-header{
+html {
+    scroll-behavior: smooth;
+}
+  
+.navmain_mob {
+    display: none;
+}
+
+.kep2 {
+    display: none;
+}
+
+.navmain {
+    max-width: 100vw;
+    width: 100%;
+    min-height: 60px;
+    height: 10vh;
+    background-color: slategray;
     display: flex;
-    background-color: cadetblue;
     justify-content: space-between;
-    height: 5vh;
-    
+    align-items: center;
+
 }
 
-header a{
-    text-decoration: none;
-    color: blanchedalmond;
+.imgdiv {
+    min-height: 60px;
+    height: 10vh;
+    min-width: 140px;
+    width: 10vw;
+}
+.navmain img {
+    max-height:100%;
 }
 
-header ul{
-    margin: 0;
-    padding: 0;
+.navmain li {
     list-style: none;
-}
-
-header .menu{
     display: flex;
-    align-items: center;
-    justify-content: center;
     justify-content: space-between;
-    width: 30vw;
-    max-width: 350px;
 }
 
-header .home{
-    padding-left: 3vw;
-    height: 100%;
-    width:200px;
+.navmain li ul{
+    text-decoration: none;
+    color:navajowhite; 
+    font-size: 3vh;
+}
+
+.navmain li ul a {
+    text-decoration: none;
+    color:navajowhite; 
+    font-size: 3vh;
+}
+
+.navmain li ul a:hover {
+    font-size: 3.5vh;
+    text-decoration: underline;
+}
+
+.adiv div {
+    height: 10vh;
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+}
+.adiv {
+    width: 520px;
+    height: 10vh;
 }
 
-header .sign_ul{
-    padding-right: 3vw;
-    height: 100%;
-    width:200px;
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
+.navmain button {
+    min-height: 50px;
+    max-height: 80px;
+    height: calc(10vh - 40px);
+    min-width: 25vh;
+    width: calc(10vw - 40px);
+    margin: 10px;
+    border-color: navajowhite;
+    background-color: transparent;
+    color: navajowhite;
+    font-size: 3vh;
+    text-decoration: none;
+    
 }
 
-header .login:hover{
-    font-size: 2rem;
-    transition: 0.5s;
+.navmain button a{
+    color: navajowhite;
+    text-decoration: none;
+    
 }
 
-header .signin:hover{
-    font-size: 2rem;
-    transition: 0.5s;
+.navmain button:hover {
+    font-size: 3.5vh;
+    background-color:rgba(255, 222, 173, 0.2);
 }
 
-header .home:hover{
-    font-size: 2rem;
-    transition: 0.5s;
-}
-
-header .menu a:hover{
-    text-decoration: underline blanchedalmond;
-}
-
-/*main*/
-main{
-    height: 95vh;
-    background-image: url("images/main_background/landscapebg.jpg");
-    background-repeat: no-repeat;
+.bgmain {
+    height: 90vh;
+    max-width: 100vw;
+    width: 100%;
+    background-image: url(01.jpg);
     background-size: cover;
-    background-attachment: fixed;
-    overflow-x: hidden;
+    background-position: center;
+}
+
+.rolamart {
+    max-width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
+    background-color: navajowhite;
+}
+
+.rolamart div {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    justify-content: center;
     align-items: center;
-    position: relative;
-    
-    
-}
-
-
-main #scene{
-    height: 20vh;
-    width: 20vh;
+    text-align: center;
+    font-size: 3vh;
     display: flex;
-    position: relative;
+    flex-direction: column;
+    width: 70vw;
 }
 
-
-main .layer{
-    width: 20vh;
-    height:20vh;
+.rolamart div h2 {
+    color: slategray;
 }
 
-main img{
-    object-fit: contain;
-    width: 17vh;
-    height:17vh;
-    max-width: 250px;
-    max-height: 250px;
-    position: absolute;
+.szolgdiv {
+    padding-top: 3vh;
+    background-color: slategray;
+    text-align: center;
+    font-size: 3vh;
 }
 
-main #py{
-    top: 20vh;
-    left: 3vw;
+.szolgdiv h2 {
+    color: navajowhite
 }
 
-main #js{
-    top: 1vh;
-    left: 18vw;
+.szolgflex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: fit-content;
 }
 
-main #ja{
-    top: -15vh;
-    left: 10vw;
+.szolgflex div {
+    width: 48vw;
+    align-self: stretch;
+    margin-bottom: 20px;
+    border-style: double;
+    border-color: navajowhite;
+    overflow: hidden;
 }
 
-main #ht{
-    top: -10vh;
-    left: -7vw;
+.szolgflex div h3, h5 {
+    color: navajowhite;
 }
 
-main #cs{
-    top: 12vh;
-    left: -13vw;
+.szolgflex div .inside {
+    border-style: none;
+    height: fit-content;
 }
 
-main .layertext{
-    font-size: 10rem;
-    width: fit-content;
-    position: absolute !important;
-    left:-10vw;
+.elerdiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: navajowhite;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 }
 
+.kep {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 400px;
+    width: 50vw;
+}
 
+.mapouter {
+    padding-bottom: 20px;
+    width: 600px; 
+}
+
+.gmap_canvas {
+    width: 600px;
+}
+
+.eleral {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    min-width: 600px;
+    text-align: center;
+    justify-content:  center;
+    font-size: 3.5vh;
+    
+}
+.kintrol {
+    min-width: 600px;
+    min-height: 600px;
+    background-image: url(08.jpg);
+    background-size: cover;
+    align-self: stretch;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 750px) {
+    .szolgflex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    .szolgflex div {
+        width: 90vw;
+        height: fit-content;
+        margin-bottom: 20px;
+        border-style: double;
+        border-color: navajowhite;
+    }
+}
+
+@media (max-width: 850px) {
+    .navmain {
+        display: none;
+    }
+
+    .kep {
+        display: none;
+    }
+
+    .bgmain {
+        height: 100vh;
+    }
+
+    .mapouter {
+        padding-bottom: 20px;
+        width: 90vw;
+    }
+
+    .kintrol {
+        max-width: 90vw;
+    }
+    
+    .mob_main {
+        position: absolute;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .navmain_mob {
+        position: absolute;
+        height: 50vh;
+        max-width: 100vw;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navmain_mob a {
+        text-decoration: none;
+        color: navajowhite;
+        font-size: 7vh;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: black;
+    }
+
+    .kep2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: 300px;
+        width: 90vw;
+    }
+
+    .kintrol{
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+        min-width: 100px;
+        min-height: 100px;
+        width: 85vw;
+        height: 85vw;
+        margin: 0;
+    }
+
+    .mapouter {
+        margin: 0;
+    }
+
+    .eleral {
+        min-width: 100px;
+        max-width: 100vw;
+        width: 100%;
+    }
+}

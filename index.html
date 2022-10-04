@@ -1,48 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Leslie's Gaming Corp Ltd</title>
+    <title>Marika Gyógypedikűr, manikűr</title>
 </head>
 <body>
-    <header>
-        <div class="home">
-            <a href="/">Főoldal</a>
+    <div class="mob_main">
+        <div class="navmain_mob">
+            <div><a href="#rol">Rólunk</a></div>
+            <div><a href="#szol">Szolgáltatások</a></div>
+            <div><a href="#alj">Elérhetőség</a></div>
         </div>
-        <ul class="menu">
-            <li><a href="/programming">Programozás</a></li>
-            <li><a href="/">Projektek</a></li>
-            <li><a href="/">Rólam</a></li>
-        </ul>
-        <ul class="sign_ul">
-            <div class="sign_div">
-                <li>
-                    <a href="/" class="login">Bejelentkezés</a>
-                </li>
-                <li>
-                    <a href="/" class="signin">Regisztráció</a>
-                </li>
+    </div>
+    <div class="navmain">
+        <div class="imgdiv"><img src="11.jpg" alt="logo"></div>
+        <div class="adiv"><li><ul><div><a href="#rol">Rólunk</a></div></ul><ul><div><a href="#szol">Szolgáltatások</a></div></ul></li></div>
+        <button><a href="#alj">Elérhetőség</a></button>
+    </div>
+    <div class="bgmain"></div>
+    <div class="othervmain">
+        <article class="rolamart">
+            <div id="rol"><h2>Rólam</h2><p><br>A betérő ügyfeleket (gyermekek, nők és férfiak) a közel 40 éves szakértelem biztonsága várja, egy nyugodt kultúrált és könnyen megközelíthető üzletben. Számomra rendkívűl fontos vendégeim elégedettsége, így Ön is biztos lehet benne, hogy a foglalt időpontban már kezdődhet is a kezelés, késés nélkül. A számos gyógypedikűr valamint manikűr lehetőségek között mindenki számára megtalálható a legideálisabb. <br> Az elérhető szolgáltatásokról alább részletesen is olvashat.</p></div>   
+        </article>
+        <div class="szolgdiv">
+            <h2>Szolgáltatások, árak</h2>
+            <p><br><br></p>
+            <div class="szolgflex" id="szol">
+                <div><h3>Talpmasszírozás</h3><h5>4500-</h5><div class="inside"><p>30 PERC LÁBMASSZÁZS</p></div></div>
+                <div><h3>Gyerekpedikűr</h3><h5>4300-</h5><div class="inside"><p>FERTŐTLENÍTŐS ÁZTATÁS, KÖRÖM VÁGÁSA ÉS FOMRÁZÁSA, LÁB FERTŐTLENÍTÉSE, KRÉM BEMASSZÍROZÁSA</p></div></div>
+                <div><h3>Esztétikai pedikűr</h3><h5>5300-</h5><div class="inside"><p>FERTŐTLENÍTŐ ÁZTATÁS, KEVÉS BŐRKEMÉNYEDÉS ELTÁVOLÍTÁSA, KÖRÖM VÁGÁSA, FORMÁZÁSA, KRÉM BEMASSZÍROZÁSA</p></div></div>
+                <div><h3>Alap pedikűr</h3><h5>5800-</h5><div class="inside"><p>FERTŐTLENÍTŐS ÁZTATÁS, NORMÁL BŐRKEMÉNYEDÉS SZIKÉS ELTÁVOLÍTÁSA, NORMÁL VASTAGSÁGÚ KÖRÖM VÁGÁSA ÉS FOMRÁZÁSA, LÁB FERTŐTLENÍTÉSE, KRÉM BEMASSZÍROZÁSA</p></div></div>
+                <div><h3>Gyógypedikűr</h3><h5>6300-</h5><div class="inside"><p>FERTŐTLENÍTŐ ÁZTATÁS, VASTAG BŐRKEMÉNYEDÉS SZIKÉS ELTÁVOLÍTÁSA, BENŐTT, PROBLÉMÁS KÖRÖMSAROK KIVÁGÁSA, TISZTÍTÁSA ÉS FERTŐTLENÍTÉSE, TYÚKSZEM KISZEDÉSE, GYULLADÁSGÁTLÓ KRÉM ALKALMAZÁSA, SZÜKSÉG ESETÉN KÖTÖZÉS, MAJD FERTŐTLENÍTÉS ÉS KRÉM BEMASSZÍROZÁSA</p></div></div>
+                <div><h3>Manikűr</h3><h5>3700-</h5><div class="inside"><p>A KÉZ ÉS KÖRMÖK FERTŐTLENÍTÉS ÁZTATÁSA, KÖRMÖK RÖVIDÍTÉSE, FORMÁZÁSA, ILLETVE RESZELÉSE. A KÖRÖMLEMEZRE LETAPADT BŐR FELLAZÍTÁSA BŐRTÁPLÁLÓ OLAJ SEGÍTSÉGÉVEL, MAJD A FELESLEGES BŐR KÖRBEVÁGÁSA. IGÉNY SZERINT LAKKOZÁS, MAJD TÁPLÁLÓ KRÉM BEMASSZÍROZÁSA</p></div></div>
+                <div><h3>Mini manikűr</h3><h5>2700-</h5><div class="inside"><p>A KÉZ ÉS KÖRMÖK FERTŐTLENÍTÉS ÁZTATÁSA. A KÖRÖMLEMEZRE LETAPADT BŐR FELLAZÍTÁSA BŐRTÁPLÁLÓ OLAJ SEGÍTSÉGÉVEL, MAJD A FELESLEGES BŐR KÖRBEVÁGÁSA. IGÉNY SZERINT LAKKOZÁS, MAJD TÁPLÁLÓ KRÉM BEMASSZÍROZÁSA</p></div></div>
+                <div><h3>Lakkozás</h3><h5>1000-</h5><div class="inside"><p>KÖRÖM ZSÍRTALANÍTÁSA, GOMBÁSODÁST MEGELŐZŐ PH-KIEGYENLÍTŐ HATÁSÚ FOLYADÉK HASZNÁLATA, ALKALMAZÁSA</p></div></div>
+                <div><h3>Francia lakkozás</h3><h5>1500-</h5><div class="inside"><p>FRANCIA LAKK ELKÉSZÍTÉSE</p></div></div>
+                <div><h3>Lakk lemosása</h3><h5>500-</h5><div class="inside"><p>KÖRÖMLAKK LEMOSÁSA</p></div></div>
             </div>
-        </ul>
-    </header>
-    <main>
-        <div id="scene">
-            <div class="layertext" data-depth="0.1">Programozás</div>
-            <div class="layer" data-depth="1"><img src="images/main_background/python.png" id="py"></div>
-            <div class="layer" data-depth="1.2"><img src="images/main_background/js.png" id="js"></div>
-            <div class="layer" data-depth="1.1"><img src="images/main_background/java.png" id="ja"></div>
-            <div class="layer" data-depth="1.5"><img src="images/main_background/html.png" id="ht"></div>
-            <div class="layer" data-depth="1.3"><img src="images/main_background/css.png" id="cs"></div>
         </div>
-    </main>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script type="text/javascript">
-        var scene = document.getElementById("scene");
-        var parallax = new Parallax(scene);
-    </script>
+        <div class="elerdiv" id="el">
+            <div class="kep">
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=kassai%20u%20%C3%A9s%20j%C3%B3kai%20&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.mapouter{position:relative;text-align:right;height:600px;width:600px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:600px;width:600px;}</style></div></div>
+                <div class="kintrol"></div>
+            </div>
+            <div class="kep2">
+                <div class="mapouter1"><div class="gmap_canvas1"><iframe width="98%" height="400" id="gmap_canvas1" src="https://maps.google.com/maps?q=kassai%20u%20%C3%A9s%20j%C3%B3kai%20&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.mapouter1{position:relative;text-align:right;height:400px;width:98%;}</style><style>.gmap_canvas1 {overflow:hidden;background:none!important;height:400px;width:98%;}</style></div></div>
+                <div class="kintrol"></div>
+            </div>
+            <div class="eleral" id="alj">
+                <p>Telefonszám: +3630-9868-706</p>
+                <p>Nyitvatartás</p>
+                <p>Kedd: 14-20-ig</p>
+                <p>Csütörtök: 8-14-ig</p>
+                <p>Szombat: 7-13-ig</p>
+            </div>
+        </div>
+        <div class="bot"></div>
+    </div>
 </body>
 </html>
