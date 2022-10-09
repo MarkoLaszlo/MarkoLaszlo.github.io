@@ -185,6 +185,8 @@ html {
 .mapouter {
     padding-bottom: 20px;
     width: 600px; 
+    background-image: url(terk.png);
+    background-size: contain;
 }
 
 .gmap_canvas {
@@ -199,9 +201,8 @@ html {
     text-align: center;
     justify-content:  center;
     font-size: 3.5vh;
+    
 }
-
-
 .kintrol {
     min-width: 600px;
     min-height: 600px;
@@ -212,8 +213,6 @@ html {
     margin-right: 20px;
     margin-bottom: 20px;
 }
-
-
 
 @media (max-width: 750px) {
     .szolgflex {
@@ -232,7 +231,7 @@ html {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .navmain {
         display: none;
     }
@@ -245,7 +244,10 @@ html {
         height: 100vh;
     }
 
-    .mapouter {
+    .mapouter1 {
+        height: 90vw;
+        background-image: url(terk.png);
+        background-size: contain;
         padding-bottom: 20px;
         width: 90vw;
     }
@@ -257,8 +259,8 @@ html {
     .mob_main {
         position: absolute;
         height: 100vh;
-	max-width: 100vw;
-	width: 100%;
+        max-width: 100vw;
+        width: 100%;
         display: flex;
         align-items: center;
     }
@@ -296,10 +298,6 @@ html {
         min-height: 100px;
         width: 85vw;
         height: 85vw;
-        margin: 0;
-    }
-
-    .mapouter {
         margin: 0;
     }
 
