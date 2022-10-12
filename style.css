@@ -183,8 +183,9 @@ html {
 }
 
 .mapouter {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     width: 600px; 
+    min-height: 600px;
     background-image: url(terk.png);
     background-size: contain;
 }
